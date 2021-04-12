@@ -1,0 +1,253 @@
+@font-face {
+    font-family: 'Conv_12939';
+    src: url('/src/fonts/12939.eot');
+    src: local('☺'), url('/src/fonts/12939.woff') format('woff'), url('/src/fonts/12939.ttf') format('truetype'), url('/src/fonts/12939.svg') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@media (min-width: 340px) and (max-width: 1200px) {
+    .menu_mob {
+        display: block;
+    }
+
+    .menu_desktop {
+        display: none;
+    }
+}
+
+@media (min-width: 1201px) {
+    .menu_mob {
+        display: none;
+    }
+
+    .menu_desktop {
+        display: block;
+        display: grid;
+    }
+}
+
+a {
+    text-decoration: none; /* Отменяем подчеркивание у ссылки */
+}
+
+.modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 99999;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    display: none;
+    pointer-events: none;
+}
+
+.modalDialog:target {
+    display: block;
+    pointer-events: auto;
+}
+
+.modalDialog > div {
+    width: 80%;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 0px;
+    background: url('../../img/bg3.jpg');
+    border: blanchedalmond 1px solid;
+    box-shadow: 0 1px 5px rgba(175, 174, 174, 0.5);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 40%;
+
+}
+
+.close {
+    background: rgb(230, 5, 5);
+    color: #ffffff;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 34px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover {
+    background: #213f61;
+}
+
+@media (max-width: 960px) {
+    .img_style {
+
+    }
+}
+
+@media screen and (max-width: 410px) {
+
+    .img_style {
+        width: 160px;
+        height: 42px;
+        margin-left: 10px;
+    }
+
+    .vegas_header_login_button {
+    }
+}
+
+
+.vegas_header_login_button {
+    font-family: 'Conv_12939';
+    position: relative;
+    height: 38px;
+    width: 70px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    background: #f06541;
+    color: #fff;
+}
+
+
+.main_root{
+    height: 67px;
+    width: 100%;
+    background: linear-gradient(#0f324f, #112737);
+    border-bottom: 1px solid #203f61;
+}
+
+.root {
+    max-width: 1285px;
+    margin: 0 auto;
+    width: 92%;
+    display: grid;
+    grid-template-columns:auto 1fr 100px;
+    grid-template-rows: 1fr;
+    padding: 0 15px;
+}
+
+.live_dealers {
+    grid-column: 1/1;
+    grid-row: 1/1;
+    background-image: url(/src/img/home-icon-silhouette.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 75%;
+    margin-top: 10px;
+    align-self: center;
+    justify-self: start;
+
+}
+
+
+.block_two {
+    grid-column: 2/2;
+    grid-row: 1/1;
+    align-self: center;
+    justify-self: end;
+}
+
+.block_tree {
+    grid-column: 3/3;
+    grid-row: 1/1;
+    align-self: center;
+    justify-self: end;
+}
+
+.live_dealers a, .live_dealers_games a {
+    color: #f06541;
+
+}
+
+.live_dealers_games {
+    background-image: url(/src/img/dealer_icon.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    margin-left: 20px;
+    background-size: 45%;
+    margin-top: 10px;
+
+}
+
+
+
+.banner_content {
+    display: flex;
+    flex-direction: column;
+    min-height: 50px;
+    max-height: 650px;
+    background-color: #000;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+}
+
+.sign_in_form2{
+    width: auto;
+    padding: 16px 30px;}
+
+
+.sign_in_form{
+
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width:320px;
+    width:100%;
+    padding: 16px 12px;
+}
+
+.login_game{
+
+
+    background-color: #FFF8C5;
+    border:solid 1px #000;
+    height:35px;
+    text-align: center;
+    width:100%;
+    max-width:350px;
+    margin: 10px 0;
+}
+
+
+.small_submit_btn{
+
+    background: #f06541;
+    color: #ffffff;
+    border: none;
+    max-width:350px;
+    width:100%;
+    height:35px;
+    margin-top: 10px;
+}
+
+.menuitem{
+    padding: 5px 7px;
+    background-color: #F5F5F6;
+}
+
+.menuitem a{ color:#000}
+
+
+

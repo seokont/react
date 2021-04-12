@@ -1,0 +1,1171 @@
+th {
+    color: red
+}
+
+
+ZIA, .AD, .AE, .AF, .AG, .AI, .AL, .AM, .AN, .AO, .AQ, .AR, .AS, .AT, .AU,
+.AW, .AX, .AZ, .BA, .BB, .BD, .BE, .BF, .BG, .BH, .BI, .BJ, .BL, .BM, .BN,
+.BO, .BR, .BS, .BT, .BV, .BW, .BY, .BZ, .CA, .CC, .CD, .CF, .CG, .CH, .CI,
+.CK, .CL, .CM, .CN, .CO, .CR, .CU, .CV, .CX, .CY, .CZ, .DE, .DJ, .DK, .DM, .DO, .DZ, .EC, .EE, .EG, .EH, .ER, .ES-CE, .ES-ML, .ES, .ET, .EU, .FI, .FJ, .FK, .FM, .FO, .FR, .GA, .GB, .GD, .GE, .GF, .GG, .GH, .GI, .GL, .GM, .GN, .GP, .GQ, .GR, .GS, .GT, .GU, .GW, .GY, .HK, .HM, .HN, .HR, .HT, .HU, .IC, .ID, .IE, .IL, .IM, .IN, .IO, .IQ, .IR, .IS, .IT, .JE, .JM, .JO, .JP, .KE, .KG, .KH, .KI, .KM, .KN, .KOSOVO, .KP, .KR, .KW, .KY, .KZ, .LA, .LB, .LC, .LI, .LK, .LR, .LS, .LT, .LU, .LV, .LY, .MA, .MC, .MD, .ME, .MF, .MG, .MH, .MK, .ML, .MM, .MN, .MO, .MP, .MQ, .MR, .MS, .MT, .MU, .MV, .MW, .MX, .MY, .MZ, .NA, .NC, .NE, .NF, .NG, .NI, .NKR, .NL, .NO, .NP, .NR, .NU, .NZ, .OM, .PA, .PE, .PF, .PG, .PH, .PK, .PL, .PM, .PN, .PR, .PS, .PT, .PW, .PY, .QA, .RE, .RO, .RS, .RU, .RW, .SA, .SB, .SC, .SD, .SE, .SG, .SH, .SI, .SJ, .SK, .SL, .SM, .SN, .SO, .SOUTH-OSSETIA, .SR, .SS, .ST, .SV, .SY, .SZ, .TC, .TD, .TF, .TG, .TH, .TJ, .TK, .TL, .TM, .TN, .TO, .TR, .TT, .TV, .TW, .TZ, .UA, .UG, .UM, .US, .UY, .UZ, .VA, .VC, .VE, .VG, .VI, .VN, .VU, .WF, .WS, .YE, .YT, .ZA, .ZM, .ZW {
+    background: url("/src/img/flags.png") no-repeat 0 9px;
+    display: -moz-inline-box;
+    -moz-box-orient: vertical;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: baseline;
+    position: relative;
+    overflow: hidden;
+    width: 16px;
+    height: 9px;
+    font-size: 0;
+    line-height: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.ABKHAZIA {
+    background-position: 0 0px;
+}
+
+.AD {
+    background-position: 0 -9px;
+}
+
+.AE {
+    background-position: 0 -18px;
+}
+
+.AF {
+    background-position: 0 -27px;
+}
+
+.AG {
+    background-position: 0 -36px;
+}
+
+.AI {
+    background-position: 0 -45px;
+}
+
+.AL {
+    background-position: 0 -54px;
+}
+
+.AM {
+    background-position: 0 -63px;
+}
+
+.AN {
+    background-position: 0 -72px;
+}
+
+.AO {
+    background-position: 0 -81px;
+}
+
+.AQ {
+    background-position: 0 -90px;
+}
+
+.AR {
+    background-position: 0 -99px;
+}
+
+.AS {
+    background-position: 0 -108px;
+}
+
+.AT {
+    background-position: 0 -117px;
+}
+
+.AU {
+    background-position: 0 -126px;
+}
+
+.AW {
+    background-position: 0 -135px;
+}
+
+.AX {
+    background-position: 0 -144px;
+}
+
+.AZ {
+    background-position: 0 -153px;
+}
+
+.BA {
+    background-position: 0 -162px;
+}
+
+.BB {
+    background-position: 0 -171px;
+}
+
+.BD {
+    background-position: 0 -180px;
+}
+
+.BE {
+    background-position: 0 -189px;
+}
+
+.BF {
+    background-position: 0 -198px;
+}
+
+.BG {
+    background-position: 0 -207px;
+}
+
+.BH {
+    background-position: 0 -216px;
+}
+
+.BI {
+    background-position: 0 -225px;
+}
+
+.BJ {
+    background-position: 0 -234px;
+}
+
+.BL {
+    background-position: 0 -243px;
+}
+
+.BM {
+    background-position: 0 -252px;
+}
+
+.BN {
+    background-position: 0 -261px;
+}
+
+.BO {
+    background-position: 0 -270px;
+}
+
+.BR {
+    background-position: 0 -279px;
+}
+
+.BS {
+    background-position: 0 -288px;
+}
+
+.BT {
+    background-position: 0 -297px;
+}
+
+.BV {
+    background-position: 0 -306px;
+}
+
+.BW {
+    background-position: 0 -315px;
+}
+
+.BY {
+    background-position: 0 -324px;
+}
+
+.BZ {
+    background-position: 0 -333px;
+}
+
+.CA {
+    background-position: 0 -342px;
+}
+
+.CC {
+    background-position: 0 -351px;
+}
+
+.CD {
+    background-position: 0 -360px;
+}
+
+.CF {
+    background-position: 0 -369px;
+}
+
+.CG {
+    background-position: 0 -378px;
+}
+
+.CH {
+    background-position: 0 -387px;
+}
+
+.CI {
+    background-position: 0 -396px;
+}
+
+.CK {
+    background-position: 0 -405px;
+}
+
+.CL {
+    background-position: 0 -414px;
+}
+
+.CM {
+    background-position: 0 -423px;
+}
+
+.CN {
+    background-position: 0 -432px;
+}
+
+.CO {
+    background-position: 0 -441px;
+}
+
+.CR {
+    background-position: 0 -450px;
+}
+
+.CU {
+    background-position: 0 -459px;
+}
+
+.CV {
+    background-position: 0 -468px;
+}
+
+.CX {
+    background-position: 0 -477px;
+}
+
+.CY {
+    background-position: 0 -486px;
+}
+
+.CZ {
+    background-position: 0 -495px;
+}
+
+.DE {
+    background-position: 0 -504px;
+}
+
+.DJ {
+    background-position: 0 -513px;
+}
+
+.DK {
+    background-position: 0 -522px;
+}
+
+.DM {
+    background-position: 0 -531px;
+}
+
+.DO {
+    background-position: 0 -540px;
+}
+
+.DZ {
+    background-position: 0 -549px;
+}
+
+.EC {
+    background-position: 0 -558px;
+}
+
+.EE {
+    background-position: 0 -567px;
+}
+
+.EG {
+    background-position: 0 -576px;
+}
+
+.EH {
+    background-position: 0 -585px;
+}
+
+.ER {
+    background-position: 0 -594px;
+}
+
+.ES-CE {
+    background-position: 0 -603px;
+}
+
+.ES-ML {
+    background-position: 0 -612px;
+}
+
+.ES {
+    background-position: 0 -621px;
+}
+
+.ET {
+    background-position: 0 -630px;
+}
+
+.EU {
+    background-position: 0 -639px;
+}
+
+.FI {
+    background-position: 0 -648px;
+}
+
+.FJ {
+    background-position: 0 -657px;
+}
+
+.FK {
+    background-position: 0 -666px;
+}
+
+.FM {
+    background-position: 0 -675px;
+}
+
+.FO {
+    background-position: 0 -684px;
+}
+
+.FR {
+    background-position: 0 -693px;
+}
+
+.GA {
+    background-position: 0 -702px;
+}
+
+.GB {
+    background-position: 0 -711px;
+}
+
+.GD {
+    background-position: 0 -720px;
+}
+
+.GE {
+    background-position: 0 -729px;
+}
+
+.GF {
+    background-position: 0 -738px;
+}
+
+.GG {
+    background-position: 0 -747px;
+}
+
+.GH {
+    background-position: 0 -756px;
+}
+
+.GI {
+    background-position: 0 -765px;
+}
+
+.GL {
+    background-position: 0 -774px;
+}
+
+.GM {
+    background-position: 0 -783px;
+}
+
+.GN {
+    background-position: 0 -792px;
+}
+
+.GP {
+    background-position: 0 -801px;
+}
+
+.GQ {
+    background-position: 0 -810px;
+}
+
+.GR {
+    background-position: 0 -819px;
+}
+
+.GS {
+    background-position: 0 -828px;
+}
+
+.GT {
+    background-position: 0 -837px;
+}
+
+.GU {
+    background-position: 0 -846px;
+}
+
+.GW {
+    background-position: 0 -855px;
+}
+
+.GY {
+    background-position: 0 -864px;
+}
+
+.HK {
+    background-position: 0 -873px;
+}
+
+.HM {
+    background-position: 0 -882px;
+}
+
+.HN {
+    background-position: 0 -891px;
+}
+
+.HR {
+    background-position: 0 -900px;
+}
+
+.HT {
+    background-position: 0 -909px;
+}
+
+.HU {
+    background-position: 0 -918px;
+}
+
+.IC {
+    background-position: 0 -927px;
+}
+
+.ID {
+    background-position: 0 -936px;
+}
+
+.IE {
+    background-position: 0 -945px;
+}
+
+.IL {
+    background-position: 0 -954px;
+}
+
+.IM {
+    background-position: 0 -963px;
+}
+
+.IN {
+    background-position: 0 -972px;
+}
+
+.IO {
+    background-position: 0 -981px;
+}
+
+.IQ {
+    background-position: 0 -990px;
+}
+
+.IR {
+    background-position: 0 -999px;
+}
+
+.IS {
+    background-position: 0 -1008px;
+}
+
+.IT {
+    background-position: 0 -1017px;
+}
+
+.JE {
+    background-position: 0 -1026px;
+}
+
+.JM {
+    background-position: 0 -1035px;
+}
+
+.JO {
+    background-position: 0 -1044px;
+}
+
+.JP {
+    background-position: 0 -1053px;
+}
+
+.KE {
+    background-position: 0 -1062px;
+}
+
+.KG {
+    background-position: 0 -1071px;
+}
+
+.KH {
+    background-position: 0 -1080px;
+}
+
+.KI {
+    background-position: 0 -1089px;
+}
+
+.KM {
+    background-position: 0 -1098px;
+}
+
+.KN {
+    background-position: 0 -1107px;
+}
+
+.KOSOVO {
+    background-position: 0 -1116px;
+}
+
+.KP {
+    background-position: 0 -1125px;
+}
+
+.KR {
+    background-position: 0 -1134px;
+}
+
+.KW {
+    background-position: 0 -1143px;
+}
+
+.KY {
+    background-position: 0 -1152px;
+}
+
+.KZ {
+    background-position: 0 -1161px;
+}
+
+.LA {
+    background-position: 0 -1170px;
+}
+
+.LB {
+    background-position: 0 -1179px;
+}
+
+.LC {
+    background-position: 0 -1188px;
+}
+
+.LI {
+    background-position: 0 -1197px;
+}
+
+.LK {
+    background-position: 0 -1206px;
+}
+
+.LR {
+    background-position: 0 -1215px;
+}
+
+.LS {
+    background-position: 0 -1224px;
+}
+
+.LT {
+    background-position: 0 -1233px;
+}
+
+.LU {
+    background-position: 0 -1242px;
+}
+
+.LV {
+    background-position: 0 -1251px;
+}
+
+.LY {
+    background-position: 0 -1260px;
+}
+
+.MA {
+    background-position: 0 -1269px;
+}
+
+.MC {
+    background-position: 0 -1278px;
+}
+
+.MD {
+    background-position: 0 -1287px;
+}
+
+.ME {
+    background-position: 0 -1296px;
+}
+
+.MF {
+    background-position: 0 -1305px;
+}
+
+.MG {
+    background-position: 0 -1314px;
+}
+
+.MH {
+    background-position: 0 -1323px;
+}
+
+.MK {
+    background-position: 0 -1332px;
+}
+
+.ML {
+    background-position: 0 -1341px;
+}
+
+.MM {
+    background-position: 0 -1350px;
+}
+
+.MN {
+    background-position: 0 -1359px;
+}
+
+.MO {
+    background-position: 0 -1368px;
+}
+
+.MP {
+    background-position: 0 -1377px;
+}
+
+.MQ {
+    background-position: 0 -1386px;
+}
+
+.MR {
+    background-position: 0 -1395px;
+}
+
+.MS {
+    background-position: 0 -1404px;
+}
+
+.MT {
+    background-position: 0 -1413px;
+}
+
+.MU {
+    background-position: 0 -1422px;
+}
+
+.MV {
+    background-position: 0 -1431px;
+}
+
+.MW {
+    background-position: 0 -1440px;
+}
+
+.MX {
+    background-position: 0 -1449px;
+}
+
+.MY {
+    background-position: 0 -1458px;
+}
+
+.MZ {
+    background-position: 0 -1467px;
+}
+
+.NA {
+    background-position: 0 -1476px;
+}
+
+.NC {
+    background-position: 0 -1485px;
+}
+
+.NE {
+    background-position: 0 -1494px;
+}
+
+.NF {
+    background-position: 0 -1503px;
+}
+
+.NG {
+    background-position: 0 -1512px;
+}
+
+.NI {
+    background-position: 0 -1521px;
+}
+
+.NKR {
+    background-position: 0 -1530px;
+}
+
+.NL {
+    background-position: 0 -1539px;
+}
+
+.NO {
+    background-position: 0 -1548px;
+}
+
+.NP {
+    background-position: 0 -1557px;
+}
+
+.NR {
+    background-position: 0 -1566px;
+}
+
+.NU {
+    background-position: 0 -1575px;
+}
+
+.NZ {
+    background-position: 0 -1584px;
+}
+
+.OM {
+    background-position: 0 -1593px;
+}
+
+.PA {
+    background-position: 0 -1602px;
+}
+
+.PE {
+    background-position: 0 -1611px;
+}
+
+.PF {
+    background-position: 0 -1620px;
+}
+
+.PG {
+    background-position: 0 -1629px;
+}
+
+.PH {
+    background-position: 0 -1638px;
+}
+
+.PK {
+    background-position: 0 -1647px;
+}
+
+.PL {
+    background-position: 0 -1656px;
+}
+
+.PM {
+    background-position: 0 -1665px;
+}
+
+.PN {
+    background-position: 0 -1674px;
+}
+
+.PR {
+    background-position: 0 -1683px;
+}
+
+.PS {
+    background-position: 0 -1692px;
+}
+
+.PT {
+    background-position: 0 -1701px;
+}
+
+.PW {
+    background-position: 0 -1710px;
+}
+
+.PY {
+    background-position: 0 -1719px;
+}
+
+.QA {
+    background-position: 0 -1728px;
+}
+
+.RE {
+    background-position: 0 -1737px;
+}
+
+.RO {
+    background-position: 0 -1746px;
+}
+
+.RS {
+    background-position: 0 -1755px;
+}
+
+.RU {
+    background-position: 0 -1764px;
+}
+
+.RW {
+    background-position: 0 -1773px;
+}
+
+.SA {
+    background-position: 0 -1782px;
+}
+
+.SB {
+    background-position: 0 -1791px;
+}
+
+.SC {
+    background-position: 0 -1800px;
+}
+
+.SD {
+    background-position: 0 -1809px;
+}
+
+.SE {
+    background-position: 0 -1818px;
+}
+
+.SG {
+    background-position: 0 -1827px;
+}
+
+.SH {
+    background-position: 0 -1836px;
+}
+
+.SI {
+    background-position: 0 -1845px;
+}
+
+.SJ {
+    background-position: 0 -1854px;
+}
+
+.SK {
+    background-position: 0 -1863px;
+}
+
+.SL {
+    background-position: 0 -1872px;
+}
+
+.SM {
+    background-position: 0 -1881px;
+}
+
+.SN {
+    background-position: 0 -1890px;
+}
+
+.SO {
+    background-position: 0 -1899px;
+}
+
+.SOUTH-OSSETIA {
+    background-position: 0 -1908px;
+}
+
+.SR {
+    background-position: 0 -1917px;
+}
+
+.SS {
+    background-position: 0 -1926px;
+}
+
+.ST {
+    background-position: 0 -1935px;
+}
+
+.SV {
+    background-position: 0 -1944px;
+}
+
+.SY {
+    background-position: 0 -1953px;
+}
+
+.SZ {
+    background-position: 0 -1962px;
+}
+
+.TC {
+    background-position: 0 -1971px;
+}
+
+.TD {
+    background-position: 0 -1980px;
+}
+
+.TF {
+    background-position: 0 -1989px;
+}
+
+.TG {
+    background-position: 0 -1998px;
+}
+
+.TH {
+    background-position: 0 -2007px;
+}
+
+.TJ {
+    background-position: 0 -2016px;
+}
+
+.TK {
+    background-position: 0 -2025px;
+}
+
+.TL {
+    background-position: 0 -2034px;
+}
+
+.TM {
+    background-position: 0 -2043px;
+}
+
+.TN {
+    background-position: 0 -2052px;
+}
+
+.TO {
+    background-position: 0 -2061px;
+}
+
+.TR {
+    background-position: 0 -2070px;
+}
+
+.TT {
+    background-position: 0 -2079px;
+}
+
+.TV {
+    background-position: 0 -2088px;
+}
+
+.TW {
+    background-position: 0 -2097px;
+}
+
+.TZ {
+    background-position: 0 -2106px;
+}
+
+.UA {
+    background-position: 0 -2115px;
+}
+
+.UG {
+    background-position: 0 -2124px;
+}
+
+.UM {
+    background-position: 0 -2133px;
+}
+
+.US {
+    background-position: 0 -2142px;
+}
+
+.UY {
+    background-position: 0 -2151px;
+}
+
+.UZ {
+    background-position: 0 -2160px;
+}
+
+.VA {
+    background-position: 0 -2169px;
+}
+
+.VC {
+    background-position: 0 -2178px;
+}
+
+.VE {
+    background-position: 0 -2187px;
+}
+
+.VG {
+    background-position: 0 -2196px;
+}
+
+.VI {
+    background-position: 0 -2205px;
+}
+
+.VN {
+    background-position: 0 -2214px;
+}
+
+.VU {
+    background-position: 0 -2223px;
+}
+
+.WF {
+    background-position: 0 -2232px;
+}
+
+.WS {
+    background-position: 0 -2241px;
+}
+
+.YE {
+    background-position: 0 -2250px;
+}
+
+.YT {
+    background-position: 0 -2259px;
+}
+
+.ZA {
+    background-position: 0 -2268px;
+}
+
+.ZM {
+    background-position: 0 -2277px;
+}
+
+.ZW {
+    background-position: 0 -2286px;
+}
+
+
+.red{color: red; cursor: pointer !important; font-weight: bold}
+.green{color: green; cursor: pointer !important; font-weight: bold}
+.del{cursor: pointer !important;}
+
+
+
+.modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    display: none;
+    pointer-events: none;
+}
+
+.modalDialog:target {
+    display: block;
+    pointer-events: auto;
+}
+
+.modalDialog > div {
+    width: 20%;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #fff;
+    background: -moz-linear-gradient(#fff, #999);
+    background: -webkit-linear-gradient(#fff, #999);
+    background: -o-linear-gradient(#fff, #999);
+}
+
+.close {
+    background: #333;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover { background: #ccc; }
+
+
+
+
+
+
+
+
+
+
+
+.modalDialog2 {
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    display: none;
+    pointer-events: none;
+}
+
+.modalDialog2:target {
+    display: block;
+    pointer-events: auto;
+}
+
+.modalDialog2 > div {
+    width: 400px;
+    position: relative;
+    margin: 0 auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #fff;
+    background: -moz-linear-gradient(#fff, #999);
+    background: -webkit-linear-gradient(#fff, #999);
+    background: -o-linear-gradient(#fff, #999);
+
+}
+
+.close2 {
+    background: #333;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+
+.close2:hover { background: #ccc; }

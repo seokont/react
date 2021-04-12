@@ -1,0 +1,19 @@
+.root {
+    background-color: #707070;
+    border-radius: 4px;
+    color: white;
+    margin: 2rem auto;
+    max-width: 360px;
+    padding: 4rem;
+}
+
+.slides h3 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+
+.slick-prev::before, .slick-next::before {
+
+    display: none;
+}

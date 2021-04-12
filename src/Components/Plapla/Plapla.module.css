@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'Conv_12939';
+    src: url('/src/fonts/12939.eot');
+    src: local('☺'), url('/src/fonts/12939.woff') format('woff'), url('/src/fonts/12939.ttf') format('truetype'), url('/src/fonts/12939.svg') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+.button2{
+    background: #004B18;
+    border: 0;
+    font-size: 20px;
+    width: 200px;
+    padding: 10px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 10px;
+    font-family: 'Conv_12939';
+}
+
+
+.button1{
+    background: #E8641B;
+    border: 0;
+    font-size: 20px;
+    width: 200px;
+    padding: 10px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 10px;
+    font-family: 'Conv_12939';
+}

@@ -1,0 +1,29 @@
+
+
+
+.App_Wrapper_Content {
+  background-color: black;
+ height: 100vh;
+  grid-area: c;
+  
+}
+
+.App_Wrapper_wrap{
+  display: grid;
+  padding: 10px 0;
+  grid-template:
+    [header-left] 'h' auto [header-right]
+    [main-left] 'c' 300% [main-right]
+    [footer-left] 'f' auto [footer-right]
+    / 100% ;
+
+  /* background: url('../src/img/magic-aces.jpg');
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%; */
+  
+}
+
+
+

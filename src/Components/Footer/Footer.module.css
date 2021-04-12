@@ -1,0 +1,10 @@
+.App_footer{
+
+
+    grid-column: f;
+    background-color: #000;   
+   
+    color:#fff;
+    text-align: center;
+
+}
