@@ -10,7 +10,7 @@ import AuthRedirectNoneToken from "../../Hoc/AuthRedirectNoneToken";
 
 
 let mapStateToProps = (state) => ({
-
+    getplayers: state.GetPlayers.AllPlayers,
     token: state.Token,
     totalrake:state.TotalRake.TotalRake,
     allrake:state.Allrake.AllRake
@@ -19,7 +19,6 @@ let mapStateToProps = (state) => ({
 })
 
 let GetallrakeConteiner = compose(connect(mapStateToProps, {
-    
     addAllRakeThunk
 }),AuthRedirectNoneToken)(Getallrake);
 export default GetallrakeConteiner;

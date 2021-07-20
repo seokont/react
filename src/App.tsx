@@ -22,11 +22,7 @@ import BalanceStatisticBetweenPlayersContainer
     from "./Components/BalanceStatisticBetweenPlayers/BalanceStatisticBetweenPlayersContainer";
 import {makeStyles} from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
-import aces2 from "../src/img/main-bg.png";
-import Cookies from 'universal-cookie';
-
 import Plapla from "./Components/Plapla/Plapla";
-
 
 
 const useStyles = makeStyles((theme) => ({
@@ -76,14 +72,9 @@ function App(props: any) {
                     alignItems="stretch"
                 >
                     <HeaderContainer/>
-
-
                 </Grid>
             </Grid>
-
             <Grid item xs={12}>
-
-
                 <Route
                     path="/newtournamentsgame"
                     render={() => <NewTournamentsConteiner/>}
@@ -106,22 +97,14 @@ function App(props: any) {
                 <Route path="/conplayers" render={() => <NavTabs/>}/>
                 <Route path="/login" render={() => <LoginContainer/>}/>
                 <Route path="/poker" render={() => <PokerContainer/>}/>
-
                 <Route path="/allrake" render={() => <GetallrakeConteiner/>}/>
-
                 <Route path="/pla" render={() => <Plapla/>}/>
-
                 <Route path="/balance" render={() => <BalanceStatisticContainer/>}/>
-
-
                 <Route
                     path="/balanceplayers"
                     render={() => <BalanceStatisticBetweenPlayersContainer/>}
                 />
-
-
                 <Route exact path="/" component={Plapla}/>
-
                 <Route exact path="/">
                     {props.token.Token === "" ? (
                         <Redirect to="/"/>
@@ -129,16 +112,12 @@ function App(props: any) {
                         <PokerContainer/>
                     )}
                 </Route>
-
-
             </Grid>
-
-
         </div>
     );
 }
 
-let mapStateToProps = (state:any) => ({
+let mapStateToProps = (state: any) => ({
     token: state.Token,
 });
 

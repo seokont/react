@@ -200,13 +200,61 @@ EnhancedTableToolbar.propTypes = {
 const useStyles = makeStyles((theme) => ({
     root: {
         width: '100%',
+
+        '& .MuiTableCell-body':{
+            color:'#fff'
+        },
+        '& .MuiCheckbox-root':{
+            color:'#fff'
+        },
+        '& .MuiTableCell-stickyHeader':{
+            color:'#fff',
+            backgroundColor:'#000',
+        },
+        '& .MuiTableSortLabel-root':{
+            color:'#fff',
+            backgroundColor:'#000',
+        },
+        '& .MuiTableSortLabel-root:hover':{
+            color:'#fff',
+            backgroundColor:'#000',
+        },
+        '& .MuiTableSortLabel-root:focus':{
+            color:'#fff',
+            backgroundColor:'#000',
+        },
+        '& .MuiTableSortLabel-root.MuiTableSortLabel-active':{
+            color:'#fff',
+            backgroundColor:'#000',
+        },
+        '& .MuiToolbar-regular':{
+            color:'#fff',
+            backgroundColor:'#112839',
+        },
+        '& .MuiIconButton-root':{
+            color:'#fff',
+        },
+        '& .MuiFormControlLabel-root':{
+            color:'#fff',
+            padding:'7px 0 0 15px'
+        },
+        '& .MuiTableSortLabel-root.MuiTableSortLabel-active.MuiTableSortLabel-root.MuiTableSortLabel-active .MuiTableSortLabel-icon':{
+            color:'#fff',
+            backgroundColor:'#000',
+        },
+        '& .MuiTableCell-root':{
+            borderBottom:' 1px solid #333',
+            margin: '0 auto',
+        },
     },
     paper: {
         width: '100%',
         marginBottom: theme.spacing(2),
+        backgroundColor:'#000',
+        borderRadius:'0',
     },
     table: {
-        minWidth: 750,
+        minWidth: 100,
     },
     visuallyHidden: {
         border: 0,
@@ -321,7 +369,7 @@ export default function ConectedPlayers(props) {
                     <Table
                         className={classes.table}
                         aria-labelledby="tableTitle"
-                        size={dense ? 'small' : 'medium'}
+                        size={'small'}
                         aria-label="enhanced table"
                     >
                         <EnhancedTableHead
@@ -392,10 +440,7 @@ export default function ConectedPlayers(props) {
                     onChangeRowsPerPage={handleChangeRowsPerPage}
                 />
             </Paper>
-            <FormControlLabel
-                control={<Switch checked={dense} onChange={handleChangeDense} />}
-                label="Dense padding"
-            />
+
         </div>
     );
 }

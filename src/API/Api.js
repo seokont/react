@@ -3,7 +3,7 @@ import * as axios from "axios";
 let istance = axios.create({
     // withCredentials: true,
     //headers: {"API-KEY": "650f94ea-79b5-4a28-9f55-c2cda6024f17"},
-    baseURL: "https://mavensdev.xyz/wp-json/pokerapi/v1",
+    baseURL: "https://texas83.com/wp-json/pokerapi/v1",
     headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
         "Authorization": `${localStorage.getItem("Token")}`

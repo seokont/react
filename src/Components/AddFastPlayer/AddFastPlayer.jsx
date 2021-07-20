@@ -17,8 +17,8 @@ const useStyles = makeStyles((theme) => ({
         flexDirection: "column",
         alignItems: "center",
 
-        background: `url(${ac})`,
-        backgroundColor: "black",
+
+        backgroundColor: "#1a1a1a",
         backgroundSize: "cover",
         backgroundRepeat: "repeat-y",
         backgroundPosition: "center center",

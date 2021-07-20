@@ -196,7 +196,7 @@ const BalanceTransfer = (props) => {
                         color="primary"
                         className={classes.submit}
                     >
-                        Go
+                        TRANSFER
                     </BootstrapButton>
                     {/* <Grid container>
                         <Grid item xs>

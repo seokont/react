@@ -6,12 +6,8 @@ import slide3 from '../../img/Slider3.png'
 import slide4 from '../../img/Slider4.png'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
 import Slider from "react-slick";
-
 export default function SSlider() {
-
-
     let settings = {
         dots: false,
         infinite: true,
@@ -19,45 +15,52 @@ export default function SSlider() {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        variableWidth: true,
-        centerMode: true,
+        centerMode: false,
+        className: "slider variable-width",
         responsive: [
+
             {
-                breakpoint: 768,
+                breakpoint: 1280,
                 settings: {
-                    arrows: false,
-                    centerMode: true,
-                    centerPadding: '40px',
                     slidesToShow: 1,
-                    variableWidth: false,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    initialSlide: 2
                 }
             },
             {
                 breakpoint: 480,
                 settings: {
-                    arrows: false,
-                    centerMode: true,
-                    centerPadding: '40px',
-                    slidesToShow: 1
+                    slidesToShow: 1,
+                    slidesToScroll: 1
                 }
             }
         ]
-
-
-
-
-
     };
-
     return (
-        <div style={{margin: '0 auto', height: '400px', width: '100%', overflow: 'hidden'}}>
+        <div style={{margin: '0 auto',  width: '100%', overflow: 'hidden'}}>
             <Slider {...settings}>
-                <div style={{width: 'auto'}}><img src={slide1}/></div>
-                <div style={{width: 'auto'}}><img src={slide2}/></div>
-                <div style={{width: 'auto'}}><img src={slide3}/></div>
-                <div style={{width: 'auto'}}><img src={slide4}/></div>
-
-
+               <img src={slide1}/>
+                <img src={slide2}/>
+                <img src={slide3}/>
+                <img src={slide4}/>
             </Slider>
         </div>
     );

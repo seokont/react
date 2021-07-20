@@ -58,7 +58,7 @@ const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
         backgroundColor: theme.palette.background.paper,
-        
+
     },
 }));
 
@@ -73,7 +73,7 @@ export default function NavTabs(props) {
     return (
         <div className={classes.root}>
             <AppBar position="static">
-                <Tabs style={{backgroundColor:'#171717'}}
+                <Tabs style={{backgroundColor:'#112738'}}
                     variant="fullWidth"
                     value={value}
                     onChange={handleChange}

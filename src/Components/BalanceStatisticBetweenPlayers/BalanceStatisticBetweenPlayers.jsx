@@ -22,6 +22,7 @@ import DeleteIcon from '@material-ui/icons/Delete';
 import FilterListIcon from '@material-ui/icons/FilterList';
 import {Button, Link, Menu, MenuItem} from "@material-ui/core";
 import  '../BalanceStatistic/style.css';
+import style from "../Getplayers/Getplayers.module.css";
 function createData(name, agent, balance, time) {
   return { name, agent, balance, time };
 }
@@ -60,9 +61,10 @@ const headCells = [
   { id: 'user2', numeric: true, disablePadding: false, label: 'Recipient' },
   { id: 'amount', numeric: true, disablePadding: false, label: 'Amount' },
   { id: 'data', numeric: true, disablePadding: false, label: 'Data & Time' },
-  
-  
+
+
 ];
+
 
 function EnhancedTableHead(props) {
   const { classes, onSelectAllClick, order, orderBy, numSelected, rowCount, onRequestSort } = props;
@@ -189,18 +191,58 @@ EnhancedTableToolbar.propTypes = {
 const useStyles = makeStyles((theme) => ({
   root: {
     width: '100%',
+
+    '& .MuiTableCell-body':{
+      color:'#fff'
+    },
+    '& .MuiCheckbox-root':{
+      color:'#fff'
+    },
+    '& .MuiTableCell-stickyHeader':{
+      color:'#fff',
+      backgroundColor:'#000',
+    },
+    '& .MuiTableSortLabel-root:hover':{
+      color:'#fff',
+      backgroundColor:'#000',
+    },
+    '& .MuiTableSortLabel-root:focus':{
+      color:'#fff',
+      backgroundColor:'#000',
+    },
+    '& .MuiTableSortLabel-root.MuiTableSortLabel-active':{
+      color:'#fff',
+      backgroundColor:'#000',
+    },
+    '& .MuiToolbar-regular':{
+      color:'#fff',
+      backgroundColor:'#112839',
+    },
+    '& .MuiIconButton-root':{
+      color:'#fff',
+
+    },
+    '& .MuiFormControlLabel-root':{
+      color:'#fff',
+      padding:'7px 0 0 15px'
+    },
+    '& .MuiTableSortLabel-root.MuiTableSortLabel-active.MuiTableSortLabel-root.MuiTableSortLabel-active .MuiTableSortLabel-icon':{
+      color:'#fff',
+      backgroundColor:'#000',
+    },
+    '& .MuiTableCell-root':{
+      borderBottom:' 1px solid #333',
+      margin: '0 auto',
+    },
   },
   paper: {
     width: '100%',
     marginBottom: theme.spacing(2),
-   
-    borderRadius:'0'
-    
+    backgroundColor:'#000',
+    borderRadius:'0',
   },
-  
   table: {
     minWidth: 100,
-   
   },
   visuallyHidden: {
     border: 0,
@@ -220,7 +262,7 @@ export default function BalanceStatisticBetweenPlayers(props) {
 
     useEffect(() => {
         props.addBalPlayersThunk();
-       
+
 
     }, []);
   const classes = useStyles();
@@ -284,15 +326,15 @@ export default function BalanceStatisticBetweenPlayers(props) {
   const emptyRows = rowsPerPage - Math.min(rowsPerPage, props.allbalpl.length - page * rowsPerPage);
 
   return (
-      
+
     <div className={classes.root}>
       <Paper className={classes.paper}>
         <EnhancedTableToolbar addBalPlayersThunk={props.addBalPlayersThunk} numSelected={selected.length} />
-        <TableContainer>
-          <Table
+        <TableContainer className={style.tableFixHeader}>
+          <Table stickyHeader={true}
             className={classes.table}
             aria-labelledby="tableTitle"
-            size={dense ? 'small' : 'medium'}
+            size={'small'}
             aria-label="enhanced table"
           >
             <EnhancedTableHead
@@ -326,23 +368,29 @@ export default function BalanceStatisticBetweenPlayers(props) {
                           checked={isItemSelected}
                           inputProps={{ 'aria-labelledby': labelId }}
                         />
-                      </TableCell> 
-                      
+                      </TableCell>
+
                       <TableCell component="th" id={labelId} scope="row" padding="none">
                         {row.id}
                       </TableCell>
-                      <TableCell align="right">{row.user1}</TableCell>
-                      <TableCell align="right">{row.user2}</TableCell>
+                      <TableCell style={{
+                        color: 'rgb(243, 226, 94)',
+                        fontWeight: 'bold'
+                      }} align="right">{row.user1}</TableCell>
+                      <TableCell style={{
+                        color: 'rgb(243, 226, 94)',
+                        fontWeight: 'bold'
+                      }} align="right">{row.user2}</TableCell>
                       <TableCell align="right">{row.balance < 0 ? <div style={{color:'red', fontSize:'15px',fontWeight:'bold'}}>{row.balance}</div>:
                       <div style={{color:'green', fontSize:'15px',fontWeight:'bold'}}>{row.balance}</div>}</TableCell>
                       <TableCell align="right">{row.data}</TableCell>
-                      
-                      
+
+
                     </TableRow>
                   );
                 })}
               {emptyRows > 0 && (
-                <TableRow style={{ height: (dense ? 33 : 53) * emptyRows }}>
+                <TableRow style={{ height: '35px'}}>
                   <TableCell colSpan={6} />
                 </TableRow>
               )}
@@ -359,10 +407,10 @@ export default function BalanceStatisticBetweenPlayers(props) {
           onChangeRowsPerPage={handleChangeRowsPerPage}
         />
       </Paper>
-      <FormControlLabel
-        control={<Switch checked={dense} onChange={handleChangeDense} />}
-        label="Dense padding"
-      />
+      {/*<FormControlLabel*/}
+      {/*  control={<Switch checked={dense} onChange={handleChangeDense} />}*/}
+      {/*  label="Dense padding"*/}
+      {/*/>*/}
     </div>
   );
 }

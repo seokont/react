@@ -28,12 +28,9 @@ import {ChatBubbleOutline, DesktopAccessDisabled, DesktopWindows, Edit} from "@m
 import {deleteGameThunk} from "../../Reducer/delgame-reducer";
 import {CircularProgress} from "@material-ui/core";
 import SendMessageTableContainer from "../SendMesageTable/SendMessageTableContainer";
-
 function createData(Name, Description, Status, Auto, Game) {
     return {Name, Description, Status, Auto, Game};
 }
-
-
 function descendingComparator(a, b, orderBy) {
     if (b[orderBy] < a[orderBy]) {
         return -1;
@@ -43,13 +40,11 @@ function descendingComparator(a, b, orderBy) {
     }
     return 0;
 }
-
 function getComparator(order, orderBy) {
     return order === 'desc'
         ? (a, b) => descendingComparator(a, b, orderBy)
         : (a, b) => -descendingComparator(a, b, orderBy);
 }
-
 function stableSort(array, comparator) {
     const stabilizedThis = array.map((el, index) => [el, index]);
     stabilizedThis.sort((a, b) => {
@@ -59,12 +54,11 @@ function stableSort(array, comparator) {
     });
     return stabilizedThis.map((el) => el[0]);
 }
-
 const headCells = [
     {id: 'Name', numeric: false, disablePadding: true, label: 'Name'},
     {id: 'Game', numeric: true, disablePadding: false, label: 'Game'},
     {id: 'Status', numeric: true, disablePadding: false, label: 'Status'},
-    {id: 'Auto', numeric: true, disablePadding: false, label: 'Auto'},
+    {id: 'RakePercent', numeric: true, disablePadding: false, label: 'Rake Table'},
     {id: 'PW', numeric: true, disablePadding: false, label: 'PW'},
     {id: 'PermPlay', numeric: true, disablePadding: false, label: 'PermPlay'},
     {id: 'Description', numeric: true, disablePadding: false, label: 'Description'},
@@ -74,16 +68,14 @@ const headCells = [
     {id: 'BuyInMin', numeric: true, disablePadding: false, label: 'BuyInMin'},
     {id: 'BuyInMax', numeric: true, disablePadding: false, label: 'BuyInMax'},
     {id: 'BuyInDef', numeric: true, disablePadding: false, label: 'BuyInDef'},
-    {id: 'RakePercent', numeric: true, disablePadding: false, label: 'RakePercent'},
+    {id: 'Auto', numeric: true, disablePadding: false, label: 'Auto'},
     {id: 'TimeBank', numeric: true, disablePadding: false, label: 'TimeBank'},
 ];
-
 function EnhancedTableHead(props) {
     const {classes, onSelectAllClick, order, orderBy, numSelected, rowCount, onRequestSort} = props;
     const createSortHandler = (property) => (event) => {
         onRequestSort(event, property);
     };
-
     return (
         <TableHead>
             <TableRow>
@@ -120,7 +112,6 @@ function EnhancedTableHead(props) {
         </TableHead>
     );
 }
-
 EnhancedTableHead.propTypes = {
     classes: PropTypes.object.isRequired,
     numSelected: PropTypes.number.isRequired,
@@ -130,7 +121,6 @@ EnhancedTableHead.propTypes = {
     orderBy: PropTypes.string.isRequired,
     rowCount: PropTypes.number.isRequired,
 };
-
 const useToolbarStyles = makeStyles((theme) => ({
     root: {
         paddingLeft: theme.spacing(2),
@@ -138,7 +128,6 @@ const useToolbarStyles = makeStyles((theme) => ({
     },
     rounded: {
         borderRadius: '0'
-
     },
     highlight:
         theme.palette.type === 'light'
@@ -154,52 +143,39 @@ const useToolbarStyles = makeStyles((theme) => ({
         flex: '1 1 100%',
     },
 }));
-
 const EnhancedTableToolbar = (props) => {
-
     const [countDel, setCountDel] = useState(0);
     useEffect(() => {
         props.authThunk();
     }, [countDel]);
-
     const classes = useToolbarStyles();
     const {numSelected} = props;
-
-
     let deleteRingGames = () => {
         for (let i = 0; i < props.getgamesobject.length; i++) {
             props.deleteGameThunk(props.getgamesobject[i]);
         }
         return setCountDel(countDel + 1);
     }
-
     let offlineGames = () => {
         for (let i = 0; i < props.getgamesobject.length; i++) {
             props.offlineGameThunk(props.getgamesobject[i]);
         }
         return setCountDel(countDel + 1);
     }
-
     let onlineGames = () => {
         for (let i = 0; i < props.getgamesobject.length; i++) {
             props.onlineGameThunk(props.getgamesobject[i]);
         }
         return setCountDel(countDel + 1);
     }
-
-
     const editor = (name) => {
         props.getGameOneThunk(name)
     }
-
     let formessage = () => {
         for (let i = 0; i < props.getgamesobject.length; i++) {
             props.addMessageForTableName(props.getgamesobject[i]);
         }
-
     }
-
-
     return (
         <Toolbar
             className={clsx(classes.root, {
@@ -215,10 +191,7 @@ const EnhancedTableToolbar = (props) => {
                     Ring Games
                 </Typography>
             )}
-
             {numSelected > 0 ? (
-
-
                 <div>
                     <table>
                         <tr>
@@ -237,8 +210,6 @@ const EnhancedTableToolbar = (props) => {
                                 </IconButton>
                             </Tooltip>
                             </td>
-
-
                             <td><Tooltip title="Enabled">
                                 <IconButton aria-label="Enabled">
                                     <DesktopWindows className={style.green} onClick={() => {
@@ -247,10 +218,7 @@ const EnhancedTableToolbar = (props) => {
                                 </IconButton>
                             </Tooltip>
                             </td>
-
                             <td>
-
-
                                 <NavLink to='/editringgame'
                                          style={{}}
                                          title='Edit'>
@@ -262,10 +230,7 @@ const EnhancedTableToolbar = (props) => {
                                         </IconButton>
                                     </Tooltip>
                                 </NavLink>
-
                             </td>
-
-
                             <td>
                                 <Tooltip title="Message">
                                     <IconButton aria-label="Message">
@@ -273,7 +238,6 @@ const EnhancedTableToolbar = (props) => {
                                     <span>
                                                 <a href={`#${props.getgamesobject[0]}`} title='Message' onClick={() => {
                                                     formessage(props.getgamesobject[0])
-
                                                 }}
                                                    style={{color: '#706468'}}><ChatBubbleOutline/></a>
                                                 <div id={props.getgamesobject[0]} className={style.modalDialog}>
@@ -284,15 +248,12 @@ const EnhancedTableToolbar = (props) => {
                                                     </div>
                                                 </div>
                                             </span>
-
                                     </IconButton>
                                 </Tooltip>
                             </td>
                         </tr>
                     </table>
                 </div>
-
-
             ) : (
                 <Tooltip title="Filter list">
                     <IconButton aria-label="filter list">
@@ -303,21 +264,67 @@ const EnhancedTableToolbar = (props) => {
         </Toolbar>
     );
 };
-
 EnhancedTableToolbar.propTypes = {
     numSelected: PropTypes.number.isRequired,
 };
-
 const useStyles = makeStyles((theme) => ({
     root: {
         width: '100%',
+
+        '& .MuiTableCell-body':{
+            color:'#fff'
+        },
+        '& .MuiCheckbox-root':{
+            color:'#fff'
+        },
+        '& .MuiTableCell-stickyHeader':{
+            color:'#fff',
+            backgroundColor:'#000',
+        },
+        '& .MuiTableSortLabel-root':{
+            color:'#fff',
+            backgroundColor:'#000',
+        },
+        '& .MuiTableSortLabel-root:hover':{
+            color:'#fff',
+            backgroundColor:'#000',
+        },
+        '& .MuiTableSortLabel-root:focus':{
+            color:'#fff',
+            backgroundColor:'#000',
+        },
+        '& .MuiTableSortLabel-root.MuiTableSortLabel-active':{
+            color:'#fff',
+            backgroundColor:'#000',
+        },
+        '& .MuiToolbar-regular':{
+            color:'#fff',
+            backgroundColor:'#112839',
+        },
+        '& .MuiIconButton-root':{
+            color:'#fff',
+        },
+        '& .MuiFormControlLabel-root':{
+            color:'#fff',
+            padding:'7px 0 0 15px'
+        },
+        '& .MuiTableSortLabel-root.MuiTableSortLabel-active.MuiTableSortLabel-root.MuiTableSortLabel-active .MuiTableSortLabel-icon':{
+            color:'#fff',
+            backgroundColor:'#000',
+        },
+        '& .MuiTableCell-root':{
+            borderBottom:' 1px solid #333',
+            margin: '0 auto',
+        },
     },
     paper: {
         width: '100%',
         marginBottom: theme.spacing(2),
+        backgroundColor:'#000',
+        borderRadius:'0',
     },
     table: {
-        minWidth: 750,
+        minWidth: 100,
     },
     visuallyHidden: {
         border: 0,
@@ -331,9 +338,7 @@ const useStyles = makeStyles((theme) => ({
         width: 1,
     },
 }));
-
 export default function Ringgames(props) {
-
     useEffect(() => {
         props.authThunk();
     }, []);
@@ -344,13 +349,11 @@ export default function Ringgames(props) {
     const [page, setPage] = React.useState(0);
     const [dense, setDense] = React.useState(false);
     const [rowsPerPage, setRowsPerPage] = React.useState(15);
-
     const handleRequestSort = (event, property) => {
         const isAsc = orderBy === property && order === 'asc';
         setOrder(isAsc ? 'desc' : 'asc');
         setOrderBy(property);
     };
-
     const handleSelectAllClick = (event) => {
         if (event.target.checked) {
             const newSelecteds = props.getgames.map((n) => n.Name);
@@ -360,11 +363,9 @@ export default function Ringgames(props) {
         }
         setSelected([]);
     };
-
     const handleClick = (event, Name) => {
         const selectedIndex = selected.indexOf(Name);
         let newSelected = [];
-
         if (selectedIndex === -1) {
             newSelected = newSelected.concat(selected, Name);
         } else if (selectedIndex === 0) {
@@ -378,38 +379,30 @@ export default function Ringgames(props) {
             );
         }
         props.getGameObj(newSelected);
-
         setSelected(newSelected);
     };
-
     const handleChangePage = (event, newPage) => {
         setPage(newPage);
     };
-
     const handleChangeRowsPerPage = (event) => {
         setRowsPerPage(parseInt(event.target.value, 10));
         setPage(0);
     };
-
     const handleChangeDense = (event) => {
         setDense(event.target.checked);
     };
-
     const isSelected = (Name) => selected.indexOf(Name) !== -1;
-
     const emptyRows = rowsPerPage - Math.min(rowsPerPage, props.getgames.length - page * rowsPerPage);
-
     return (
-
         <div className={classes.root}>
             {props.resultgetgames === "" ? <div style={{textAlign: 'center'}}><CircularProgress/></div> : <div>
                 <Paper className={classes.paper}>
                     <EnhancedTableToolbar {...props} numSelected={selected.length}/>
-                    <TableContainer>
+                    <TableContainer className={style.tableFixHeader}>
                         <Table
                             className={classes.table}
                             aria-labelledby="tableTitle"
-                            size={dense ? 'small' : 'medium'}
+                            size={ 'small' }
                             aria-label="enhanced table"
                         >
                             <EnhancedTableHead
@@ -427,7 +420,6 @@ export default function Ringgames(props) {
                                     .map((row, index) => {
                                         const isItemSelected = isSelected(row.Name);
                                         const labelId = `enhanced-table-checkbox-${index}`;
-
                                         return (
                                             <TableRow
                                                 hover
@@ -447,15 +439,12 @@ export default function Ringgames(props) {
                                                 <TableCell component="th" id={labelId} scope="row" padding="none">
                                                     {row.Name}
                                                 </TableCell>
-
                                                 <TableCell align="right">{row.Game}</TableCell>
                                                 <TableCell align="right">{row.Status == 'Offline' ?
                                                     <div style={{color: 'red'}}>{row.Status}</div> :
-                                                    <div style={{color: 'green'}}>{row.Status}</div>}</TableCell>
-
-
-                                                <TableCell align="right">{row.Auto}</TableCell>
-
+                                                    <div style={{color: 'green'}}>Online</div>}</TableCell>
+                                                <TableCell style={{color: 'orange', fontWeight: 'bold'}}
+                                                           align="right">{row.RakePercent}</TableCell>
                                                 <TableCell align="right">{row.PW}</TableCell>
                                                 <TableCell align="right">{row.PermPlay}</TableCell>
                                                 <TableCell align="right">{row.Description}</TableCell>
@@ -465,7 +454,7 @@ export default function Ringgames(props) {
                                                 <TableCell align="right">{row.BuyInMin}</TableCell>
                                                 <TableCell align="right">{row.BuyInMax}</TableCell>
                                                 <TableCell align="right">{row.BuyInDef}</TableCell>
-                                                <TableCell align="right">{row.RakePercent}</TableCell>
+                                                <TableCell align="right">{row.Auto}</TableCell>
                                                 <TableCell align="right">{row.TimeBank}</TableCell>
                                             </TableRow>
                                         );
@@ -488,10 +477,7 @@ export default function Ringgames(props) {
                         onChangeRowsPerPage={handleChangeRowsPerPage}
                     />
                 </Paper>
-                <FormControlLabel
-                    control={<Switch checked={dense} onChange={handleChangeDense}/>}
-                    label="Dense padding"
-                />
+
             </div>}
         </div>
     );

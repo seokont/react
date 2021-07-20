@@ -2,7 +2,9 @@ import React from "react";
 import {compose} from "redux";
 import {connect} from "react-redux";
 import Getplayers from "./Getplayers";
-import {authPlayersThunk, authSessionThunk, getObj} from "../../Reducer/getplayers-reducer";
+import {authPlayersThunk, authSessionThunk, NumberPage, NumberPageAction} from "../../Reducer/getplayers-reducer";
+
+import {getObj} from "../../Reducer/getplayers-reducer";
 import {eddPlayerThunk, editPlayerThunkByObject} from "../../Reducer/editplayer-reducer";
 import {addPlayerForGamesResult} from "../../Reducer/addplayer-reducer";
 import {deletePlayerThunk} from "../../Reducer/delplayer-reducer";
@@ -18,6 +20,7 @@ import AuthRedirectNoneToken from "./../../Hoc/AuthRedirectNoneToken";
 
 
 let mapStateToProps = (state) => ({
+    getNumberPage: state.GetPlayers.NumberPage,
     getplayers: state.GetPlayers.AllPlayers,
     getplayersOne: state.GetPlayers.PlayerOne,
     resultgetplayers: state.GetPlayers.Result,
@@ -34,6 +37,7 @@ let mapStateToProps = (state) => ({
 })
 
 let GetplayersConteiner = compose(connect(mapStateToProps, {
+    NumberPageAction,
     addPlayerTokenThunk,
     addImageCountryThunk,
     authPlayersIpThunk,

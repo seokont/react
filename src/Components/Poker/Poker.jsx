@@ -22,7 +22,7 @@ class Poker extends React.Component {
     async componentDidMount() {
         // let x = localStorage.getItem("token");
         const res = await axios.post(
-            `https://mavensdev.xyz/wp-json/pokerapi/v1/authsession/?token=${this.props.token.Token}`,
+            `https://texas83.com/wp-json/pokerapi/v1/authsession/?token=${this.props.token.Token}`,
         );
         this.setState({session: res.data.session, login: res.data.name});
         this.props.addSessionThunk(res.data.role);
@@ -37,7 +37,7 @@ class Poker extends React.Component {
     async componentDidUpdate(prevProps, prevState) {
         if (this.props.token.Token != prevProps.token.Token) {
             const res = await axios.post(
-                `https://mavensdev.xyz/wp-json/pokerapi/v1/authsession/?token=${this.props.token.Token}`
+                `https://texas83.com/wp-json/pokerapi/v1/authsession/?token=${this.props.token.Token}`
             );
 
             this.setState({session: res.data.session, login: res.data.name});

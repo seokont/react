@@ -32,7 +32,7 @@ import TotalRakeReducer from "../Reducer/totalrake-reducer";
 import BalanceTransferReducer from "../Reducer/balanceransfer-reducer";
 import AllRakeReducer from "../Reducer/allrake-reducer";
 import PasswordReplaceReducer from "../Reducer/passwordreplace-reducer";
-import {object, string} from "prop-types";
+
 
 
 let reducers = combineReducers({
